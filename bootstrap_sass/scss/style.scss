@@ -1,0 +1,125 @@
+/*!
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+//MY COLORS
+
+$shamrockGreen : #1BA268;
+
+// scss-docs-start import-stack
+// Configuration
+@import "../node_modules/bootstrap/scss/functions";
+
+/* -------------------------------------------------------------------------- */
+/*                             OVERRIDE VARIABILI                             */
+/* -------------------------------------------------------------------------- */
+$white : #fff;
+// Grayscale vars
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+// Color vars
+$blue: #3B97DE;
+$dblue : #1D56A0;
+$ddblue : #1F314A;
+$dddblue: #123767;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #198754;
+$teal: #20c997;
+$cyan: #0dcaf0;
+
+
+$primary : $shamrockGreen;//COLORE PRIMARIO (pulsanti, etc)
+$enable-rounded: false; //abilita o disabilita angoli arrotondati
+$enable-grid-classes:  true ; //mettere a FALSE per disabilitare le grid-classes 
+
+$spacer: 1rem; //per modificare la base di margin e padding es. mb-3 pt-5 etc
+
+$body-bg:                   $white; //colore sfondo body
+$body-color:                $gray-900; //colore di default del testo
+
+$link-color:                $primary; //colore dei link
+$link-decoration:           underline; //link sottolineato o no?
+
+
+//TIPI DI CARATTERE
+
+//se uso Google Fonts posso mettere al posto di questa font-family il nome della font-family di Google Fonts 
+//ad esempio: 
+$font-family-sans-serif: "Poppins", sans-serif;
+//$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+// Se ci serve anche un font SERIF possiamo associare la font family a una variabile
+//$font-family-serif: 'Times',serif;
+
+/* -------------------------------------------------------------------------- */
+/*                       IMPORTO IL RESTO DEI COMPONENTI                      */
+/* -------------------------------------------------------------------------- */
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
+
+// Layout & components
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/tables";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/button-group";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/accordion";
+//@import "../node_modules/bootstrap/scss/breadcrumb";
+@import "../node_modules/bootstrap/scss/pagination";
+//@import "../node_modules/bootstrap/scss/badge";
+@import "../node_modules/bootstrap/scss/alert";
+@import "../node_modules/bootstrap/scss/progress";
+@import "../node_modules/bootstrap/scss/list-group";
+@import "../node_modules/bootstrap/scss/close";
+@import "../node_modules/bootstrap/scss/toasts";
+@import "../node_modules/bootstrap/scss/modal";
+//@import "../node_modules/bootstrap/scss/tooltip";
+@import "../node_modules/bootstrap/scss/popover";
+//@import "../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/spinners";
+@import "../node_modules/bootstrap/scss/offcanvas";
+@import "../node_modules/bootstrap/scss/placeholders";
+
+// Helpers
+@import "../node_modules/bootstrap/scss/helpers";
+
+// Utilities
+@import "../node_modules/bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+
+
+//I MIEI MIXIN CUSTOM
+@import "mymixins";
+
+
+// I MIEI STILI CUSTOM!
+@import "custom"; //NOTA: non serve indicare l'estensione se includiamo un parziale
+
